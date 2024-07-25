@@ -34,7 +34,7 @@ export default function Home() {
           {/*---------------------------------------------------------------------------------------------------*/}
           <div className="absolute bottom-0 right-2 top-0 w-2  bg-stripes" />              
       </div>
-      {/* rigth */}
+      {/* -----------------------------------------------rigth------------------------------------------------- */}
       <div className="bg-black flex justify-center items-center flex-col">      
         <p className="w-[360px] text-center leading-relaxed">Nenhuma lembrança cadastrada ainda ainda! começe a {''}
           <a href="" className="underline hover:text-gray-50:">criar agora!</a>
