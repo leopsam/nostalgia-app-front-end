@@ -1,8 +1,8 @@
 # Nostalgia_App_Front_End
 
-Este é um projeto em desenvolvimento para enfatizar meus conhecimentos em tecnologias modernas de front-end. O objetivo é transformar este projeto em uma aplicação robusta e de grande escala no futuro. A seguir, estão as linguagens e ferramentas utilizadas:
+Este é um projeto em desenvolvimento para enfatizar meus conhecimentos em tecnologias modernas de front-end. O objetivo é transformar este projeto em uma aplicação robusta e de grande escala no futuro. A seguir, estão as Tecnologias Utilizadas:
 
-## Linguagens e Ferramentas Utilizadas
+## Tecnologias Utilizadas
 
 - **Node.js**: Plataforma de desenvolvimento JavaScript do lado do servidor.
 - **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática ao idioma.
@@ -10,19 +10,30 @@ Este é um projeto em desenvolvimento para enfatizar meus conhecimentos em tecno
 - **ESLint com configuração da Rocketseat**: Ferramenta de linting para manter a qualidade do código, utilizando as recomendações da Rocketseat.
 - **React com Next.js**: Biblioteca JavaScript para construção de interfaces de usuário (React) combinada com um framework de renderização do lado do servidor (Next.js) para criar aplicações web rápidas e otimizadas.
 
-## Scripts
+## Instalação
 
-Os seguintes scripts estão configurados no `package.json` para facilitar o desenvolvimento e a produção da aplicação:
+Para iniciar o projeto localmente, siga os passos abaixo:
 
-```json
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint",
-}
-```
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/leopsam/nostalgia-app-front-end.git
+    ```
 
-## Objetivo do Projeto
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd nostalgia-app-front-end
+    ```
 
-Este projeto é focado no desenvolvimento front-end e estou construindo-o para demonstrar e aprimorar meus conhecimentos em tecnologias modernas. Com o tempo, espero que este projeto evolua e se torne uma aplicação de grande porte, demonstrando minha capacidade de desenvolver soluções escaláveis e eficientes.
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
+ 4. Inicie o servidor:
+    ```bash
+    npm run dev
+    ```
+
+## Scripts Disponíveis
+
+- `npm run dev`: Inicia o servidor em modo de desenvolvimento.
+- `npm run lint`: Executa o ESLint para análise estática do código.
