@@ -1,9 +1,15 @@
+import { cookies } from "next/headers";
 import type { Metadata } from "next";
 import {
   Roboto_Flex as Roboto,
   Bai_Jamjuree as BaiJamjuree,
 } from "next/font/google";
 import "./globals.css";
+import { Profile } from "@/components/Profile";
+import { Signin } from "@/components/Signin";
+import { Hero } from "@/components/Hero";
+import { Copyright } from "@/components/Copyright";
+import { Stripes } from "@/components/Stripes";
 
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto" });
 
@@ -23,12 +29,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isAuthenticated = cookies().has("token");
   return (
     <html lang="en">
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} font-sans text-gray-100 bg-custom-image bg-cover bg-center h-screen`}
       >
-        {children}
+        <main className="grid grid-cols-2 min-h-screen">
+          {/* left */}
+          <div className="relative flex flex-col items-start justify-between px-28 py-16 border-r border-white/10">
+            {isAuthenticated ? <Profile /> : <Signin />}
+            <Hero />
+            <Copyright />
+            <Stripes />
+          </div>
+          {/* rigth */}
+          <div className="bg-black flex justify-center items-center flex-col">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
