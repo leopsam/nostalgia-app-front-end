@@ -15,23 +15,25 @@ Este é um projeto em desenvolvimento para enfatizar meus conhecimentos em tecno
 Para iniciar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
-    ```bash
-    git clone https://github.com/leopsam/nostalgia-app-front-end.git
-    ```
+
+   ```bash
+   git clone https://github.com/leopsam/nostalgia-app-front-end.git
+   ```
 
 2. Navegue até o diretório do projeto:
-    ```bash
-    cd nostalgia-app-front-end
-    ```
+
+   ```bash
+   cd nostalgia-app-front-end
+   ```
 
 3. Instale as dependências:
-    ```bash
-    npm install
-    ```
- 4. Inicie o servidor:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm install
+   ```
+4. Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
 
 ## Scripts Disponíveis
 
