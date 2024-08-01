@@ -37,16 +37,14 @@ export default function RootLayout({
       >
         <main className="grid grid-cols-2 min-h-screen">
           {/* left */}
-          <div className="relative flex flex-col items-start justify-between px-28 py-16 border-r border-white/10">
+          <div className="relative flex flex-col items-start justify-between px-28 py-16 overflow-hidden border-r border-white/10">
             {isAuthenticated ? <Profile /> : <Signin />}
             <Hero />
             <Copyright />
             <Stripes />
           </div>
           {/* rigth */}
-          <div className="bg-black flex justify-center items-center flex-col">
-            {children}
-          </div>
+          <div className="bg-black flex flex-col p-16">{children}</div>
         </main>
       </body>
     </html>
