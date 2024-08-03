@@ -44,7 +44,9 @@ export default function RootLayout({
             <Stripes />
           </div>
           {/* rigth */}
-          <div className="bg-black flex flex-col p-16">{children}</div>
+          <div className="bg-black overflow-y-scroll max-h-screen">
+            {children}
+          </div>
         </main>
       </body>
     </html>
