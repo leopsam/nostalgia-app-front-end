@@ -1,7 +1,7 @@
-(async () => {
+;(async () => {
   const prettierConfig = {
-    plugins: [await import("prettier-plugin-tailwindcss")],
-  };
+    plugins: [await import('prettier-plugin-tailwindcss')],
+  }
 
-  module.exports = prettierConfig;
-})();
+  module.exports = prettierConfig
+})()

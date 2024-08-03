@@ -1,5 +1,6 @@
-import Image from "next/image";
-import icon from "./../../public/images/icon-w.png";
+import Image from 'next/image'
+import icon from './../../public/images/icon-w.png'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -17,12 +18,12 @@ export function Hero() {
           quiser!
         </p>
       </div>
-      <a
-        href="/"
+      <Link
+        href="/memories/new"
         className="inline-block rounded-full bg-green-500 px-5 py-5 font-alt text-sm uppercase leading-none text-black hover:bg-green-700"
       >
         Cadastrar Lembrança
-      </a>
+      </Link>
     </div>
-  );
+  )
 }

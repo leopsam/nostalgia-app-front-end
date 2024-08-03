@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import { User } from 'lucide-react'
 
 export function Signin() {
   return (
@@ -13,5 +13,5 @@ export function Signin() {
         <span className="underline">Crie sua conte </span>e salve suas memorias
       </p>
     </a>
-  );
+  )
 }

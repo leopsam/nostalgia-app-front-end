@@ -1,5 +1,5 @@
-import { EmptyMemories } from "@/components/EmptyMemories";
+import { EmptyMemories } from '@/components/EmptyMemories'
 
 export default function Home() {
-  return <EmptyMemories />;
+  return <EmptyMemories />
 }
